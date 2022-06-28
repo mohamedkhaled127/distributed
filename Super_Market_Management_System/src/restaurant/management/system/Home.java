@@ -117,6 +117,11 @@ public class Home extends javax.swing.JFrame {
 
         btnEditProduct.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         btnEditProduct.setText("View,Edit,Delete Product");
+        btnEditProduct.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnEditProductActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -212,6 +217,11 @@ public class Home extends javax.swing.JFrame {
         // TODO add your handling code here:
         new AddNewProduct().setVisible(true);
     }//GEN-LAST:event_btnNewProductActionPerformed
+
+    private void btnEditProductActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEditProductActionPerformed
+        // TODO add your handling code here:
+        new ViewEditDeleteProduct().setVisible(true);
+    }//GEN-LAST:event_btnEditProductActionPerformed
 
     /**
      * @param args the command line arguments
